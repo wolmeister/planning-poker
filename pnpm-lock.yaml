@@ -10,6 +10,7 @@ devDependencies:
   eslint: 7.17.0
   eslint-config-airbnb: 18.2.1_23e8124c5713df1fe93e7c6a7e9fc690
   eslint-config-prettier: 7.1.0_eslint@7.17.0
+  eslint-import-resolver-typescript: 2.3.0_860e0a3f1402db18f3476b9d86a8ac51
   eslint-plugin-import: 2.22.1_eslint@7.17.0
   eslint-plugin-jsx-a11y: 6.4.1_eslint@7.17.0
   eslint-plugin-prettier: 3.3.1_69979e61f6e4e06807b16d761b81a74d
@@ -1857,6 +1858,23 @@ packages:
     dev: true
     resolution:
       integrity: sha512-ogtf+5AB/O+nM6DIeBUNr2fuT7ot9Qg/1harBfBtaP13ekEWFQEEMP94BCB7zaNW3gyY+8SHYF00rnqYwXKWOA==
+  /eslint-import-resolver-typescript/2.3.0_860e0a3f1402db18f3476b9d86a8ac51:
+    dependencies:
+      debug: 4.3.1
+      eslint: 7.17.0
+      eslint-plugin-import: 2.22.1_eslint@7.17.0
+      glob: 7.1.6
+      is-glob: 4.0.1
+      resolve: 1.19.0
+      tsconfig-paths: 3.9.0
+    dev: true
+    engines:
+      node: '>=4'
+    peerDependencies:
+      eslint: '*'
+      eslint-plugin-import: '*'
+    resolution:
+      integrity: sha512-MHSXvmj5e0SGOOBhBbt7C+fWj1bJbtSYFAD85Xeg8nvUtuooTod2HQb8bfhE9f5QyyNxEfgzqOYFCvmdDIcCuw==
   /eslint-module-utils/2.6.0:
     dependencies:
       debug: 2.6.9
@@ -5454,6 +5472,7 @@ specifiers:
   eslint: ^7.17.0
   eslint-config-airbnb: ^18.2.1
   eslint-config-prettier: ^7.1.0
+  eslint-import-resolver-typescript: ^2.3.0
   eslint-plugin-import: ^2.22.1
   eslint-plugin-jsx-a11y: ^6.4.1
   eslint-plugin-prettier: ^3.3.1

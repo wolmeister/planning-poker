@@ -1,0 +1,127 @@
+body {
+  background-color: #1e1f26;
+  margin: 0;
+}
+
+/* Temporary style, only used in the coming soon page */
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.cards {
+  display: flex;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 220px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 3px 3px 7px #000000;
+}
+
+.card:before {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-size: 35px;
+}
+
+.card:after {
+  position: absolute;
+  font-size: 35px;
+  right: 5px;
+  bottom: 5px;
+}
+
+.card--diamond:before,
+.card--diamond:after {
+  content: '♦';
+  color: #ff0000;
+}
+
+.card--heart:before,
+.card--heart:after {
+  content: '♥';
+  color: #ff0000;
+}
+
+.card--club:before,
+.card--club:after {
+  content: '♣';
+  color: #000;
+}
+
+.card--spade:before,
+.card--spade:after {
+  content: '♠';
+  color: #000;
+}
+
+.card:nth-child(1) {
+  transform: rotate(-15deg);
+}
+
+.card:nth-child(2) {
+  margin-top: -20px;
+  margin-left: -30px;
+  transform: rotate(-5deg);
+}
+
+.card:nth-child(3) {
+  margin-top: -20px;
+  margin-left: -30px;
+  transform: rotate(5deg);
+}
+
+.card:nth-child(4) {
+  margin-left: -30px;
+  transform: rotate(15deg);
+}
+
+.card__text {
+  font-size: 80px;
+  font-family: Georgia;
+}
+
+@media only screen and (max-width: 562px) {
+  .card {
+    height: 150px;
+    width: 90px;
+  }
+
+  .card__text {
+    font-size: 55px;
+  }
+
+  .card:before,
+  .card:after {
+    font-size: 20px;
+  }
+
+  .card:nth-child(2) {
+    margin-top: -12px;
+    margin-left: -24px;
+    transform: rotate(-5deg);
+  }
+
+  .card:nth-child(3) {
+    margin-top: -12px;
+    margin-left: -24px;
+    transform: rotate(5deg);
+  }
+
+  .card:nth-child(4) {
+    margin-left: -24px;
+    transform: rotate(15deg);
+  }
+}
