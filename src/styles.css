@@ -1,127 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 body {
-  background-color: #1e1f26;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
 
-/* Temporary style, only used in the coming soon page */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
-#root {
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
+
+  background: rgba(242, 238, 255, 0.8);
 }
 
-.cards {
-  display: flex;
-}
+button {
+  display: block;
+  background: #5d3ddb;
+  box-shadow: 2px 2px 6px rgba(133, 102, 255, 0.31);
+  border-radius: 8px;
+  width: 128px;
+  height: 38px;
+  color: #f5f5f0;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: Montserrat;
 
-.card {
   position: relative;
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+button::after {
+  content: '';
+  background-color: rgba(93, 61, 219, 0.22);
+  filter: blur(20px);
+  border-radius: 8px;
+
+  display: block;
+  position: absolute;
+  left: 11.3%;
+  top: 23.08%;
+  width: 125.41px;
+  height: 36.89px;
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+button:hover {
+  background-color: #6541f1;
+}
+
+button:active {
+  background: #5d40d0;
+  padding: 0;
+}
+
+.outer-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
-  height: 220px;
-  border-radius: 10px;
+
+  width: 457.83px;
+  height: 344.94px;
+
+  background: rgba(233, 235, 248, 0.4);
+  box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0.25),
+    inset 0px 0px 14px 5px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+
+  border-radius: 40px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 405.15px;
+  height: 292.26px;
+
   background: #ffffff;
-  box-shadow: 3px 3px 7px #000000;
-}
-
-.card:before {
-  position: absolute;
-  left: 5px;
-  top: 5px;
-  font-size: 35px;
-}
-
-.card:after {
-  position: absolute;
-  font-size: 35px;
-  right: 5px;
-  bottom: 5px;
-}
-
-.card--diamond:before,
-.card--diamond:after {
-  content: '♦';
-  color: #ff0000;
-}
-
-.card--heart:before,
-.card--heart:after {
-  content: '♥';
-  color: #ff0000;
-}
-
-.card--club:before,
-.card--club:after {
-  content: '♣';
-  color: #000;
-}
-
-.card--spade:before,
-.card--spade:after {
-  content: '♠';
-  color: #000;
-}
-
-.card:nth-child(1) {
-  transform: rotate(-15deg);
-}
-
-.card:nth-child(2) {
-  margin-top: -20px;
-  margin-left: -30px;
-  transform: rotate(-5deg);
-}
-
-.card:nth-child(3) {
-  margin-top: -20px;
-  margin-left: -30px;
-  transform: rotate(5deg);
-}
-
-.card:nth-child(4) {
-  margin-left: -30px;
-  transform: rotate(15deg);
-}
-
-.card__text {
-  font-size: 80px;
-  font-family: Georgia;
-}
-
-@media only screen and (max-width: 562px) {
-  .card {
-    height: 150px;
-    width: 90px;
-  }
-
-  .card__text {
-    font-size: 55px;
-  }
-
-  .card:before,
-  .card:after {
-    font-size: 20px;
-  }
-
-  .card:nth-child(2) {
-    margin-top: -12px;
-    margin-left: -24px;
-    transform: rotate(-5deg);
-  }
-
-  .card:nth-child(3) {
-    margin-top: -12px;
-    margin-left: -24px;
-    transform: rotate(5deg);
-  }
-
-  .card:nth-child(4) {
-    margin-left: -24px;
-    transform: rotate(15deg);
-  }
+  box-shadow: 0px 0px 20px 2px rgba(209, 198, 252, 0.1), 2px 3px 18px 5px rgba(190, 197, 239, 0.21);
+  border-radius: 30px;
 }
