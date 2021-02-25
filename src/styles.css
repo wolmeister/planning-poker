@@ -82,6 +82,15 @@ button:active {
   padding: 0;
 }
 
+button:nth-child(2):hover {
+    background-color: #5d40d0
+}
+
+button:nth-child(2):active {
+    background: #6541f1;
+    padding: 0
+}
+
 .outer-card {
   display: flex;
   align-items: center;
@@ -101,7 +110,7 @@ button:active {
 .card {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
   width: 405.15px;
   height: 292.26px;

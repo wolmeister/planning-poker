@@ -9,6 +9,7 @@ export default function HomePage() {
       <div className="outer-card">
         <div className="card">
           <button type="button">Entrar</button>
+          <button type="button">Entrar</button>
         </div>
       </div>
     </div>
