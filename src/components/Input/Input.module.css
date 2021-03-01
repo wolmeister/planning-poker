@@ -1,0 +1,14 @@
+.input {
+  height: 3rem;
+  padding: 0 1rem;
+  background-color: #f2eeff;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+}
+
+.input::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  color: #5d3ddb;
+}
