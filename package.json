@@ -19,7 +19,7 @@
     "api": "yarn workspace @planning-poker/api",
     "shared": "yarn workspace @planning-poker/shared",
     "web": "yarn workspace @planning-poker/web",
-    "build": "yarn --cwd ./packages/web build && yarn copy-build",
+    "build": "yarn api build && yarn web build && yarn copy-build",
     "copy-build": "shx rm -rf ./.next && shx cp -r ./packages/web/.next ./.next"
   },
   "devDependencies": {

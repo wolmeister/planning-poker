@@ -2,7 +2,8 @@
 node_modules/
 
 # Debug
-npm-debug.log*
+yarn-error.log*
+tsconfig.tsbuildinfo
 
 # Next.js
 .next/
@@ -10,3 +11,4 @@ out/
 
 # Production
 build/
+dist/
