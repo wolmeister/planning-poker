@@ -1,0 +1,16 @@
+{
+  "name": "@planning-poker/api",
+  "version": "0.0.1",
+  "author": "Victor Wolmeister",
+  "license": "GPLv3",
+  "private": true,
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "dependencies": {
+    "@planning-poker/shared": "link:../shared"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}

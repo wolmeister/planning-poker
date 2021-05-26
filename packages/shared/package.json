@@ -1,0 +1,13 @@
+{
+  "name": "@planning-poker/shared",
+  "version": "0.0.1",
+  "author": "Victor Wolmeister",
+  "license": "GPLv3",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {},
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
